@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import  Slider from './component/Slider.js';
+import './component/slider.css';
+import AjantaCave from './component/AjantaCave.js';
 
-function App() {
+import { BrowserRouter,Link,Route,Routes } from 'react-router-dom';
+import Tajmahal from './component/Tajmahal.js';
+import Vally from './component/Vally.js';
+import unesco from "./component/unesco.png";
+
+
+export default function App() { 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <> 
+    <div className='navbar'>
+   <div className='com'><img src={unesco}/></div>
+     <div >UNESCO INDIAN HERITAGE SITES</div>
     </div>
-  );
-}
+    
 
-export default App;
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Slider/>}/>
+      <Route path="/Tajmahal" element={<Tajmahal/>}/>
+      <Route path="/Vally" element={<Vally/>}/>
+      <Route path="/AjantaCave" element={<AjantaCave/>}/>
+    </Routes>
+    </BrowserRouter>
+
+</>
+)
+}

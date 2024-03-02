@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  margin: 0;
+  font-family: "Roboto";
+  padding: 0%;
+  box-sizing: border-box;
+  /* background: rgb(255,206,51);
+  background: linear-gradient(90deg, rgba(255,206,51,1) 12%, rgba(18,58,228,1) 74%);
+} */
+background-color: rgba(92, 89, 89, 0.326) ;
+backdrop-filter: blur(10px);}
+.com{
+  height: 9vh;
+  width: 30vw;
+}
+.com img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.navbar{
+  height: 12vh;
+  width: 100%;
+  background-color:#0077d4;
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "Libre Baskerville", serif;
+
+  color: #e8e8f5;
+
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 87vh;
+}
+.slider{
+  height: 85vh;
+  overflow: hidden;
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-bottom: 2rem; */
+}
+.inner{
+  white-space: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 5px 5px 10px rbga(0,0,0,.05);
+}
+.slider-items{
+  display: inline-flex;
+  justify-content: center;
+  align-items:center ;
+  height:75vh;
+  width: 98vw;
+  margin-top: 1rem;
+}
+.slider-img{
+  position:absolute;
+  height: 75vh;
+  width:98%;
+  border-radius: 2rem;
+  object-fit:cover;
+}
+.slider-items-text{
+  font-size: 1rem;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative
+  ;
+  right:auto;
+  top: 150px;
+  
+}
+.harshit{
+  font-size: 4rem;
+  color: #ffe625;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 2px black;
+}
+.sac{
+  color: rgb(1, 23, 23);
+  font-size: 1rem;
+  height: 30vh;
+  width: 100%;
+  
+}
+p{
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  font-size: 1.4rem;
+  color: rgb(133, 6, 6);
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+}
+.slider-button{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.his{
+  color: white;
+  background-color: blue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  padding: .5rem;
+  border: none;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.his:hover{
+  background-color: rgb(97, 97, 226);
+}
+
+.button_arrow{
+  background: none;
+  border: none;
+  cursor: pointer
+  ;
+  margin-top: 20px;
+
+}
+.indicator{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  background: none;
+  border: none;
+}
+.indicator_button{
+  cursor: pointer;
+  border: none;
+  background: none;
+  margin: 5px;
+}
+.indicator-symbol{
+  color: #4e4e4f;
+}
+.indicator-symbol-active{
+  color: #e8e8f5;
+}
+@media screen  and (max-width:1025px){
+  .slider-items-text{
+    top:320px;
+  }
+  
+}
+@media screen  and (max-width:770px){
+  .slider-items-text{
+    top:250px;
+  }
+  p{
+    width: 95%;
+    font-size: 1.2rem;
+  }
+  
+}
+@media screen  and (max-width:440px){
+  .slider-items-text{
+    top:365px;
+  }
+  .slider-items{
+   
+   height: 60vh;
+   margin-top: 5rem;
+   align-items: flex-start;
+  }
+  p{
+   display:none;
+  }
+  .slider-img {
+    height: 40vh;
+    margin-top: 0;
+
+  }
+  .navbar{
+    font-size: 1.5rem;
+
+  }
+  .com{
+    font-size: 2rem;
+  }  
+}
+
+
+
+
+
+
+.tajcont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  gap: 2rem;
+
+}
+.textarea p{
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: #353636;
+  text-shadow: none;
+} .textarea h1{
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 1px white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tajimg{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tajimg img{
+  height: 45vh;
+  width: 40vw;
+  object-fit: cover;
+  border-radius: 2rem;
+}
