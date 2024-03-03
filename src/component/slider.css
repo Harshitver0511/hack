@@ -248,6 +248,27 @@ background-color: white;
   font-weight: 100;
   text-shadow: none;
 }
+@media screen  and (max-width:440px){
+  .hn{
+    flex-direction: column;
+    height: 95vh;
+  }
+  .contact{
+    height: 120vh;
+  }
+  .hn .detail{
+    width: 80%;
+  }
+  .form{
+    width: 100%;
+  }
+  /* .form form input{
+    width: 100%;
+  } */
+  .form form button,textarea ,input{
+    width: 80%;
+  }
+}
 
 
 
