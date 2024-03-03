@@ -35,13 +35,19 @@ export default function Slider() {
 
   const updateIndex=(newIndex)=>{
     if(newIndex<0){
-      newIndex=0;
+      newIndex=items.length-1;
     }
     else if(newIndex >=items.length){
-      newIndex=items.length-1;
+      newIndex=0;
     }
     setActiveIndex(newIndex);
   }
+  // setInterval((newIndex) => {
+  //   newIndex=newIndex+1;
+  //   setActiveIndex(newIndex);
+    
+  // }, 300);
+
   return (
 
     <>

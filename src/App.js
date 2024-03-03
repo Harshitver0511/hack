@@ -10,7 +10,7 @@ import unesco from "./component/unesco.png";
 
 
 export default function App() { 
-  return (
+  return ( 
     <> 
     <div className='navbar'>
    <div className='com'><img src={unesco}/></div>
