@@ -9,6 +9,7 @@ import Vally from './component/Vally.js';
 import unesco from "./component/unesco.png";
 
 
+
 export default function App() { 
   return ( 
     <> 
@@ -26,6 +27,8 @@ export default function App() {
       <Route path="/AjantaCave" element={<AjantaCave/>}/>
     </Routes>
     </BrowserRouter>
+  
+
 
 </>
 )

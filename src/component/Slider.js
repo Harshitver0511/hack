@@ -1,5 +1,6 @@
 import React from "react";
 import SliderItem from "./SliderItem";
+import { useEffect } from "react";
 
 
 export default function Slider() {
@@ -42,6 +43,13 @@ export default function Slider() {
     }
     setActiveIndex(newIndex);
   }
+  useEffect(() => {
+    const refreshInterval = setInterval(() => {
+      updateIndex(activeIndex+1);
+    }, 3000);
+
+    return () => clearInterval(refreshInterval);
+  }, [activeIndex]);
   // setInterval((newIndex) => {
   //   newIndex=newIndex+1;
   //   setActiveIndex(newIndex);
@@ -89,6 +97,34 @@ export default function Slider() {
           
           <span class="material-symbols-outlined">arrow_forward_ios</span>
         </button>
+      </div>
+    </div>
+  
+    <div className="contact">
+    <h1>GET IN TOUCH</h1>
+<div className="hn">
+<div className="detail">
+
+<h2 className="kk"> Connect with us:</h2>
+<p className="cncn">For support or any question :<br/>Email us at supportunesco@gmail.com</p>
+<div>
+<h4 className="hhh">Pixca USA</h4>
+<h4>501 Silverd Road,Suit 105,<br/>Wiliumsgton,Delier<br/>USA</h4>
+</div>
+
+          </div>
+      <div className="form">
+        <form>
+          <input type="text " placeholder="Name"/>
+          
+          <input type="email" placeholder="Email"/>
+          <input type="number" placeholder="Phone"/>
+          <textarea  placeholder="Message"/>
+          <button>Submit</button>
+        </form>
+
+      </div>
+     
       </div>
     </div>
     </>
