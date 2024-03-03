@@ -198,6 +198,40 @@ p{
     height: 9vh;
   }  
 }
+@media screen  and (max-width:376px){
+  .slider-items-text{
+    top:250px;
+  }
+  .slider-items-text .harshit{
+    font-size: 3rem;
+  }
+  .slider-items{
+   
+   height: 60vh;
+   /* margin-top: 5rem; */
+   align-items: flex-start;
+  }
+  p{
+   display:none;
+  }
+  .slider-img {
+    height: 40vh;
+    margin-top: 0;
+
+  }
+  .navbar{
+    font-size: 1.2rem;
+    height: 15vh;
+
+  }
+  .com {
+    width: 100%;
+    height: 9vh;
+  }  
+  .com img{
+    height: 90%;
+  }
+}
 
 
 
@@ -252,6 +286,54 @@ p{
   }
   .tajcont .textarea .sacc{
     height: 70vh;
+    width: 100%;
+    padding:0 .5rem;
+  
+  }
+  .tajimg img{
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+}
+@media screen  and (max-width:415px){
+  .tajcont{
+    flex-direction: column;
+    height: 280vh;
+  }
+  .tajcont .textarea {
+    width: 100%;
+    height: 220vh;
+    margin-top: 2rem;
+  
+  }
+  .tajcont .textarea .sacc{
+    height: 85vh;
+    width: 100%;
+    padding:0 .5rem;
+  
+  }
+  .tajimg img{
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+}
+@media screen  and (max-width:376px){
+  .tajcont{
+    flex-direction: column;
+    height: 360vh;
+  }
+  .tajcont .textarea {
+    width: 100%;
+    height: 260vh;
+    margin-top: 2rem;
+  
+  }
+  .tajcont .textarea .sacc{
+    height: 125vh;
     width: 100%;
     padding:0 .5rem;
   
