@@ -156,8 +156,13 @@ p{
 }
 .contact{
   height: 90vh;
+  width: 100%;background-image: url(val1.jpg);
+}
+.ii{
+  height:100%;
   width: 100%;
-background-color: white;
+background-color: #4747478b;
+backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,12 +176,14 @@ background-color: white;
 }
 .hn{
   height: 70vh;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-}
+  /* background-color:rgba(128, 130, 130, 0.64);
+  backdrop-filter: blur(7px);*/
+} 
 .form{
   height: 100%;
   width: 40%;
@@ -258,6 +265,9 @@ background-color: white;
   }
   .hn .detail{
     width: 80%;
+  }
+  .contact .ii h1{
+    font-size: 3rem;
   }
   .form{
     width: 100%;

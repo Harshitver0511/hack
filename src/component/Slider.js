@@ -101,6 +101,7 @@ export default function Slider() {
     </div>
   
     <div className="contact">
+      <div className="ii">
     <h1>GET IN TOUCH</h1>
 <div className="hn">
 <div className="detail">
@@ -125,6 +126,7 @@ export default function Slider() {
 
       </div>
      
+      </div>
       </div>
     </div>
     </>
